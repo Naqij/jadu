@@ -1,58 +1,58 @@
 var questions =[
     {
         num : 1,
-        question : "What does HTML stand for?",
-        answer : "Hyper Text Markup Language",
+        question : "What area did Macramé originated from?",
+        answer : "Arab",
         options : [
-            "Hyper Text Multiple Language",
-            "Hyper Text Preprocessor",
-            "Hyper Tool Multi Language",
-            "Hyper Text Markup Language"
+            "Africa",
+            "Arab",
+            "Asia",
+            "America"
         ]
     },
     {
 num: 2,
-question: "What does CSS stand for?",
-answer: "Cascading Style Sheet",
+question: "What type of craft is Macramé?",
+answer: "Fiber art",
 options: [
-"Computer Style Sheet",
-"Cascading Style Sheet",
-"Colorful Style Sheet",
-"Common Style Sheet"
+"Paper craft",
+"Stone craft",
+"Fiber art",
+"All the above"
 ]
 },
 {
 num: 3,
-question: "What does PHP stand for?",
-answer: "Hypertext Preprocessor",
+question: "Macramé can be used to make?",
+answer: "All the above",
 options: [
-"Hypertext Preprocessor",
-"Hypertext Programming",
-"Hometext Preprocessor",
-"Hypertext Preprogramming"
+"Plant hangers",
+"Jewellery",
+"Clothing",
+"All the above"
 ]
 },
 
 {
 num: 4,
-question: "What does XML stand for?",
-answer: "eXtensible Markup Language",
+question: "Which of the following is NOT a type of Macramé knot?",
+answer: "Cordinal beak knot",
 options: [
-"eXTra Multi-Program Language",
-"eXecutable Multiple Language",
-"eXtensible Markup Language",
-"eXamine Multiple Language"
+"Larks head",
+"Spiral Knot",
+"Cordinal beak knot",
+"Clove hitch"
 ]
 },
 {
 num: 5,
-question: "What does SQL stand for?",
-answer: "Structured Query Language",
+question: "According to the wonder, why did sailors practice Macramé on their ships?",
+answer: "To help pass the time",
 options: [
-"Statement Question Language",
-"Stylesheet Query Language",
-"Stylish Question Language",
-"Structured Query Language"
+"To help pass the time",
+"To mend their torn cloths",
+"To repair holes in the ships sail",
+"To create containers for their cargo"
 ]
 },
 

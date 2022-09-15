@@ -13,7 +13,6 @@ const wrong_ans_r = document.querySelector(".wrong-ans span");
 const percentage = document.querySelector(".percentage span");
 
 const again_quiz = document.querySelector(".result-footer .again-quiz");
-const exit = document.querySelector(".result-footer .exit");
 
 const mark_wrong = '<i class="fa fa-times"></i>';
 const mark_check = '<i class="fa fa-check"></i>';
@@ -113,13 +112,6 @@ again_quiz.onclick=()=>{
 
     reset();
 
-}
-
-exit.onclick=()=>{
-    start_btn.classList.remove("inactive");
-    result_box.classList.add("inactive");
-
-   reset();
 }
 
 function reset(){
