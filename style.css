@@ -122,12 +122,10 @@ nav {
 .quiz-box .option.incorrect{
     background: rgb(241, 153, 153);
     color: rgb(184, 12, 12);
-    border-color: rgb(184, 12, 12);
 }
 .quiz-box .option.correct{
     background: rgb(157, 246, 157);
     color: rgb(6, 138, 28);
-    border-color: rgb(6, 138, 28);
 }
 
 .quiz-box .option:hover{
