@@ -18,7 +18,6 @@ const mark_wrong = '<i class="fa fa-times"></i>';
 const mark_check = '<i class="fa fa-check"></i>';
 
 
-
 start_btn.onclick =()=>{
     quiz_box.classList.remove("inactive");
     start_btn.classList.add("inactive");
@@ -86,7 +85,6 @@ function UserAnswer(answer){
         right_answers++;
     }else{
 
-        console.log("%c Wrong Answer","color:red");
         answer.classList.add("incorrect");
         answer.insertAdjacentHTML("beforeend",mark_wrong);
         wrong_answers++;

@@ -31,7 +31,7 @@ body {
 
 nav {
     height: 8rem;
-    /* background-color: rgb(255, 255, 255);*/
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;    
@@ -42,35 +42,22 @@ nav {
     position: relative;
 }
 
-.container {    
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: auto;
-    margin: 0 auto;
-
-    min-height: 85rem;
-
-    border: #000 solid 2px;
-}
-
 .start_quiz{
     display: flex;
     justify-content: center;
     align-items: center;  
-    padding: 10px 30px;
+    padding: 1rem 3rem;
     color: #000;
     background: #fff;
     border: #000 1px solid;
-    border-radius: 10px;
+    border-radius: 1rem;
     font-size: 4rem;
     padding: 2rem 0;
     width: 30rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s;
-    margin: 30rem auto 30rem; 
+    margin: 24rem auto 25rem; 
 }
 
 .start_quiz:hover{
@@ -87,27 +74,26 @@ nav {
 }
 
 .quiz-box{
-    margin: 5rem auto 10rem;
-    border: none;
+    margin: 5rem auto 5rem;
+    border: black 1px solid;
     padding: 0 5rem 0;
     width: 100%;
-    max-width: 60rem;
-    max-height: 70rem;
+    max-width: 50rem;
+    max-height: 50rem;
 }
 .quiz-box h2{
     display: flex;
     justify-items: center;
     background-color: rgb(126, 126, 126);
     color: rgb(255, 255, 255); 
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 2rem;
     border-radius: 4px;
     filter: opacity(100%);
 }
 .quiz-box .option{
-    font-size: 3rem;
-    border: 2px solid #fff;
-    margin: 20px 0;
+    font-size: 2.5rem;
+    margin: 1rem 0;
     padding: 1.2rem 1.5rem;
     border-radius: 0.4rem;
     background-color: #e6e6e6;
@@ -139,15 +125,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10rem;
 }
+
 .count_que,.total_que{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .footer-left{
-    font-size: 18px;
+    font-size: 1.8rem;
     border: none;
     padding: 2rem;
 }
@@ -173,7 +160,7 @@ nav {
    
     color: #2f2f2f;   
     width: 100%;
-    max-width: 450px;
+    max-width: 45rem;
     
     border: #000 2px solid;
     border-radius: 3px;
@@ -182,28 +169,28 @@ nav {
     font-size: 4rem;
     color: rgb(255, 0, 0);
     text-align: center;
-    padding: 20px 0;
+    padding: 2rem 0;
 }
 
 .result-box .result{
-    padding: 40px;
+    padding: 4rem;
 }
 
 .result-box h3{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .result-footer{
     display: flex;
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
 }
 
 .result-footer .again-quiz,.result-footer .exit{
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 24px;
+    padding: 1rem 2rem;
+    font-size: 2.4rem;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -253,7 +240,7 @@ footer {
 
 .social-networks i {
     font-size: 3rem;
-    margin: 30px 0 30px;
+    margin: 3rem 0 3rem;
     padding-inline: 5%;
     color: #000;
 }
@@ -261,4 +248,77 @@ footer {
 .social-networks i:hover {
 	transform: scale(1.2);
 	transition: .5s transform;
+}
+
+/*Screen size smaller then 550px*/
+
+@media screen and (max-width: 550px) {
+    nav {
+        height: 5rem; 
+        max-width: 55rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+        padding: 1.5rem;
+    }  
+    
+    #logo > img{
+        width: 3rem;
+    }
+
+    .start_quiz{
+        width: 20rem;
+        font-size: 3rem;
+        margin: 16rem auto 17rem; 
+    }
+
+    footer {
+        margin-top: 15rem;    
+    }
+}
+
+
+/*Screen size smaller then 380px*/
+
+@media screen and (max-width: 380px) {
+
+    .start_quiz{
+        margin: 16rem auto 17rem; 
+    }
+
+    .quiz-box {
+        margin: 5rem auto 3rem;
+        padding: 0 2rem 0;
+        max-width: 30rem;
+        max-height: 40rem;
+    }
+
+    .quiz-box h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .quiz-box .option {
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .footer-left {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .next-btn {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+
+    .social-networks i {
+        font-size: 2rem;
+        margin: 1.5rem 0 1.5rem;
+        padding-inline: 5%;
+    }
 }
