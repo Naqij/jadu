@@ -66,7 +66,7 @@ nav {
     transform: scale(1.05);
 }
 
-.inactive{
+.hidden{
     display: none;
 }
 .disabled{
@@ -181,13 +181,13 @@ nav {
     margin-bottom: 1rem;
 }
 
-.result-footer{
+.end-btn{
     display: flex;
     justify-content: space-around;
     padding-bottom: 3rem;
 }
 
-.result-footer .again-quiz,.result-footer .exit{
+.end-btn .again-quiz,.end-btn .exit{
     border-radius: 5px;
     padding: 1rem 2rem;
     font-size: 2.4rem;
@@ -195,24 +195,24 @@ nav {
     transition: all 0.3s;
 }
 
-.result-footer .again-quiz{
+.end-btn .again-quiz{
     background: #000000;
     color: #fff;
 }
 
-.result-footer .again-quiz:hover{
+.end-btn .again-quiz:hover{
     box-shadow: 0 0.4rem 1.4rem 0 rgb(43, 255, 0);
     transform: scale(1.02);
     transition: transform 100ms;
     color: rgb(0, 255, 21);
 }
 
-.result-footer .exit{
+.end-btn .exit{
     background: rgb(0, 0, 0);
     color: #fff;
 }
 
-.result-footer .exit:hover{
+.end-btn .exit:hover{
     box-shadow: 0 0.4rem 1.4rem 0 rgb(255, 0, 0);
     transform: scale(1.02);
     transition: transform 100ms;
@@ -320,5 +320,32 @@ footer {
         font-size: 2rem;
         margin: 1.5rem 0 1.5rem;
         padding-inline: 5%;
+    }
+
+    .result-box {
+        max-width: 25rem;
+    }
+
+    .result-box h2 {
+        font-size: 3rem;
+        padding: 1rem 0;
+    }
+
+    .result-box .result {
+        padding: 2rem;
+    }
+
+    .result-box h3 {
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .end-btn {
+        padding-bottom: 2rem;
+    }
+
+    .end-btn .again-quiz,.end-btn .exit{
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
     }
 }

@@ -7,20 +7,20 @@ const total_q = document.querySelector(".quiz-footer .total_que");
 const count_que = document.querySelector(".quiz-footer .count_que");
 const result_box = document.querySelector(".result-box");
 
-const total_que_r = document.querySelector(".total-que span");
-const right_ans_r = document.querySelector(".right-ans span");
-const wrong_ans_r = document.querySelector(".wrong-ans span");
-const percentage = document.querySelector(".percentage span");
+const total_que_r = document.querySelector(".total-question span");
+const right_ans_r = document.querySelector(".correct-answers span");
+const wrong_ans_r = document.querySelector(".wrong-answer span");
+const score = document.querySelector(".score span");
 
-const again_quiz = document.querySelector(".result-footer .again-quiz");
+const again_quiz = document.querySelector(".end-btn .again-quiz");
 
 const mark_wrong = '<i class="fa fa-times"></i>';
 const mark_check = '<i class="fa fa-check"></i>';
 
 
 start_btn.onclick =()=>{
-    quiz_box.classList.remove("inactive");
-    start_btn.classList.add("inactive");
+    quiz_box.classList.remove("hidden");
+    start_btn.classList.add("hidden");
 }
 
 total_q.innerText = questions.length;
@@ -46,7 +46,7 @@ var AllOptions = options_box.querySelectorAll(".option");
     for(var j=0; j<AllOptions.length; j++){
         AllOptions[j].setAttribute("onclick","UserAnswer(this)");
     }
-    next_btn.classList.add("inactive");
+    next_btn.classList.add("hidden");
 }
 
 
@@ -58,11 +58,11 @@ next_btn.onclick=()=>{
         ShowQuestion(que_index);
     }else{
         console.log("Questions Complete");
-        quiz_box.classList.add("inactive");
-        result_box.classList.remove("inactive");
+        quiz_box.classList.add("hidden");
+        result_box.classList.remove("hidden");
         right_ans_r.innerText = right_answers;
         wrong_ans_r.innerText = wrong_answers;
-        percentage.innerText = ((right_answers*100)/questions.length).toFixed(2)+"%";
+        score.innerText = ((right_answers*100)/questions.length).toFixed(2)+"%";
 
         
     }
@@ -77,7 +77,7 @@ function UserAnswer(answer){
     let correctAns = questions[que_index].answer;
     var AllOptions2 = options_box.querySelectorAll(".option");
 
-    next_btn.classList.remove("inactive");
+    next_btn.classList.remove("hidden");
     if(userAns == correctAns){
         console.log("%c Right Answer","color:green");
         answer.classList.add("correct");
@@ -105,8 +105,8 @@ function UserAnswer(answer){
 }
 
 again_quiz.onclick=()=>{
-    quiz_box.classList.remove("inactive");
-    result_box.classList.add("inactive");
+    quiz_box.classList.remove("hidden");
+    result_box.classList.add("hidden");
 
     reset();
 
