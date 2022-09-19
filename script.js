@@ -1,18 +1,16 @@
 const start_btn = document.querySelector(".start_quiz");
 const quiz_box = document.querySelector(".quiz-box");
-const que_text = quiz_box.querySelector(".que_text");
+const question_input = quiz_box.querySelector(".question_input");
 const options_box = quiz_box.querySelector(".options");
 const next_btn = document.querySelector(".next-btn");
-const total_q = document.querySelector(".quiz-footer .total_que");
-const count_que = document.querySelector(".quiz-footer .count_que");
+const total_q = document.querySelector(".quiz-bottom .total_q");
+const count_que = document.querySelector(".quiz-bottom .count_que");
 const result_box = document.querySelector(".result-box");
-
 const total_que_r = document.querySelector(".total-question span");
 const right_ans_r = document.querySelector(".correct-answers span");
 const wrong_ans_r = document.querySelector(".wrong-answer span");
 const score = document.querySelector(".score span");
-
-const again_quiz = document.querySelector(".end-btn .again-quiz");
+const again_quiz = document.querySelector(".end-btn .play-again");
 
 const mark_wrong = '<i class="fa fa-times"></i>';
 const mark_check = '<i class="fa fa-check"></i>';
@@ -33,7 +31,7 @@ count_que.innerText = que_index+1;
 ShowQuestion(que_index);
 
 function ShowQuestion(q_index){
-    que_text.innerText = questions[q_index].num+". "+ questions[q_index].question;
+    question_input.innerText = questions[q_index].num+". "+ questions[q_index].question;
 var option_statement = "";
 for(var i=0; i<questions[q_index].options.length; i++){
     option_statement += `<div class="option">${questions[q_index].options[i]}</div>`;

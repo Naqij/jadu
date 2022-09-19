@@ -75,7 +75,7 @@ nav {
 
 .quiz-box{
     margin: 5rem auto 5rem;
-    border: black 1px solid;
+    border: none;
     padding: 0 5rem 0;
     width: 100%;
     max-width: 50rem;
@@ -120,7 +120,7 @@ nav {
     transition: transform 100ms;
 }
 
-.quiz-footer{
+.quiz-bottom{
     border-top: 2px dashed #fff;
     display: flex;
     justify-content: space-between;
@@ -128,12 +128,12 @@ nav {
     height: 10rem;
 }
 
-.count_que,.total_que{
+.count_que,.total_q{
     font-weight: bolder;
     font-size: 2rem;
 }
 
-.footer-left{
+.bottom-left{
     font-size: 1.8rem;
     border: none;
     padding: 2rem;
@@ -156,24 +156,22 @@ nav {
 
 .result-box{
     position: relative;
-    margin: 7rem auto 20rem auto;
-   
+    margin: 7rem auto 10rem auto;   
     color: #2f2f2f;   
     width: 100%;
-    max-width: 45rem;
-    
-    border: #000 2px solid;
+    max-width: 45rem;    
+    border: #000 1px solid;
     border-radius: 3px;
 }
 .result-box h2{
     font-size: 4rem;
     color: rgb(255, 0, 0);
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .result-box .result{
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .result-box h3{
@@ -187,7 +185,7 @@ nav {
     padding-bottom: 3rem;
 }
 
-.end-btn .again-quiz,.end-btn .exit{
+.end-btn .play-again,.end-btn .exit{
     border-radius: 5px;
     padding: 1rem 2rem;
     font-size: 2.4rem;
@@ -195,12 +193,12 @@ nav {
     transition: all 0.3s;
 }
 
-.end-btn .again-quiz{
+.end-btn .play-again{
     background: #000000;
     color: #fff;
 }
 
-.end-btn .again-quiz:hover{
+.end-btn .play-again:hover{
     box-shadow: 0 0.4rem 1.4rem 0 rgb(43, 255, 0);
     transform: scale(1.02);
     transition: transform 100ms;
@@ -305,7 +303,7 @@ footer {
         padding: 0.5rem 0.5rem;
     }
 
-    .footer-left {
+    .bottom-left {
         font-size: 1rem;
         padding: 0.5rem;
     }
@@ -344,7 +342,7 @@ footer {
         padding-bottom: 2rem;
     }
 
-    .end-btn .again-quiz,.end-btn .exit{
+    .end-btn .play-again,.end-btn .exit{
         padding: 0.5rem 1rem;
         font-size: 2rem;
     }
